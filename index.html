@@ -1,1 +1,128 @@
-text
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <a href="#contact" class="nav__item">Contacts</a>
+        <a href="#summary" class="nav__item">Summary</a>
+        <a href="#code" class="nav__item">Code Example</a>
+        <a href="#education" class="nav__item">Education</a>
+        <a href="#english" class="nav__item">English</a>
+      </nav>
+
+      <div class="container">
+        <div class="avatar">
+          <img src="./img/avatar.jpg" alt="avatar" class="avatar" />
+        </div>
+        <div class="name">
+          <h1>Dalil Sadikov</h1>
+        </div>
+        <div class="student">
+          <h2>Student</h2>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <div class="flex">
+          <div class="contacts">
+            <h2 id="contact">Contacts</h2>
+            <ul class="list">
+              <li class="list__item">Telegram:@thxfy</li>
+              <li class="list__item">Gmail:dalilsadikov36@gmail.com</li>
+              <li class="list__item">Discord:Dalil#1549</li>
+              <li class="list__item">
+                GitHub:
+                <a href="https://github.com/dalilsadikov">@dalilsadikov</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="summary">
+            <h2 id="summary">Summary</h2>
+            <p class="text">
+              A couple of months ago I started thinking about IT career and
+              finished Python course, after that course i decide to try myself
+              in Frontend and i enjoy it. Programming is very interesting for
+              me. My goal at the moment is learn HTML/CSS/JS at good level, also
+              i try to improve my English and hope soon i will achieve these
+              goals.
+            </p>
+          </div>
+        </div>
+        <!--FLEX-->
+      </div>
+      <!--CONTAINER-->
+    </main>
+
+    <section class="second__row">
+      <div class="container">
+        <div class="flex">
+          <div class="code">
+            <h2>Code Example(Python)</h2>
+            <pre id="code" class="code__example">
+
+              n = int(input())
+              list = []
+              for _ in range(n):
+                  num = input()
+                  if num not in list:
+                      list.append(num)
+              print(*list, sep="\n")
+            </pre>
+          </div>
+
+          <div class="education">
+            <h2 id="education">Education</h2>
+            <ul>
+              <li class="education__items">
+                Secondary professional education.
+              </li>
+              <li class="education__items">
+                Elementary course of python on
+                <a href="https://stepik.org/learn"> Stepik </a>
+              </li>
+              <li class="education__items">
+                Basic courses of HTML and CSS on
+                <a href="https://ru.code-basics.com/"> code-basics </a>
+              </li>
+            </ul>
+          </div>
+        </div><!--flex-->
+      </div><!--CONTAINER-->
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="flex">
+          <div class="english">
+            <h2 id="english">English</h2>
+            <p> <span class="eng"> A2.</span></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <footer class="footer">
+      
+        
+          <div class="footer__space">
+            <a class="git__link" href="https://github.com/dalilsadikov">GitHub</a>
+            <h3> <span class="date"> 2022 </span></h3>
+            <a class="course__link" href="https://rs.school/js/">Link on course</a>
+            <img class="logors" src="./img/rslogo.svg" alt="logoRS">
+         
+      </div>
+    </footer>
+  </body>
+</html>
